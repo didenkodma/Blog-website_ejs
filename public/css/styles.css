@@ -15,6 +15,10 @@
     color: #1abc9c !important;
 }
 
+.post-publish {
+    margin-top: 2rem;
+}
+
 .footer-padding {
 	padding-bottom: 60px;
 }
