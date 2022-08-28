@@ -3,10 +3,15 @@
 <h1>Home</h1>
 <p><%= homeStarting %></p>
 
-<% posts.forEach((post) => {    %>
+<% posts.forEach((post) => {   
+    let link = '/posts/' + post.title.replace(/\s/g,'').toLowerCase;
+%>
 
 <h1><%= post.title %></h1>
-<p><%= post.body %></p>
+<p>
+    <%= post.body.slice(0, 100) + " ..." %> 
+    <a href=<%= link %>>Read More</a>
+</p>
 
 <% }) %>
 
