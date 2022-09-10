@@ -4,12 +4,12 @@
 <p><%= homeStarting %></p>
 
 <% posts.forEach((post) => {   
-    let link = '/posts/' + post.title.replace(/\s/g,'').toLowerCase;
+    let link = '/posts/' + post._id;
 %>
 
-<h1><%= post.title %></h1>
+<h1><%= post.postName %></h1>
 <p>
-    <%= post.body.slice(0, 100) + " ..." %> 
+    <%= post.postValue.slice(0, 100) + " ..." %> 
     <a href=<%= link %>>Read More</a>
 </p>
 
